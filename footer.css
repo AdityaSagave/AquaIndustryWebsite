@@ -1,0 +1,265 @@
+html {
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+.footer {
+  height: 75vh;
+  width: 100vw;
+}
+
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 75vh;
+  gap: 1em;
+  margin: 0;
+  /* justify-items: baseline; */
+}
+
+
+/* .footer .container .first { */
+  /* flex: 0.01; */
+  /* height: 0.2em;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  gap: 1em;
+  margin: 3vh 0 0 0;
+  padding: 0;
+  background-color: #BCCCDC; */
+/* } */
+
+.footer .container .second {
+  flex: 3;
+  border-radius: 2em;
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  margin: 0;
+  padding: 0 3vw;
+}
+
+.footer .container .third {
+  flex: 1;
+  border-radius: 2em;
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+.footer .container .second .subone {
+  flex: 1;
+
+  border-radius: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  margin: 0;
+  padding: 0;
+  /* justify-content: center; */
+  /* align-items: center; */
+  height: 100%;
+  justify-content: space-evenly;
+
+}
+
+.footer .container .second .subone .innr-1 {
+  width: 95%;
+  height: 50%;
+  border-radius: 1em;
+  background-image: url('https://i.pinimg.com/736x/be/c6/8f/bec68f7ff944e6c14c6d4999fc237851.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .container .second .subone .innr-2 {
+  width: 95%;
+  height: 40%;
+
+  border-radius: 1em;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .container .second .subone .innr-2 p {
+  font-size: 2vh;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5vw;
+  text-align: center;
+}
+
+.footer .container .second .subtwo {
+  flex: 1;
+
+  border-radius: 2em;
+  /* display: flex;
+    flex-direction: column;
+    justify-content:space-around; */
+  /* justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0; */
+}
+
+.subtwo ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+/* .footer .container .second .subtwo .list li{
+    margin-bottom: 6%;
+    text-align: left;
+    font-size: 2vh;
+    list-style-type: none;
+    text-align: center;
+  } */
+
+.subtwo .list li {
+  justify-items: stretch;
+  text-align: center;
+}
+
+.footer .container .second .subthree {
+  flex: 1;
+
+  border-radius: 2em;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;  */
+  /* justify-content: center; */
+  gap: 1em;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  justify-content: space-evenly;
+}
+
+.footer .container .second .subthree .innr-1 {
+  width: 95%;
+  height: 30%;
+
+  border-radius: 1em;
+  display: flex;
+  /* Arrange icons horizontally */
+  /* justify-content: center; */
+  align-items: center;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+.footer .container .second .subthree .innr-1 i {
+  font-size: 3vw;
+}
+
+.footer .container .second .subthree .innr-2 {
+  width: 95%;
+  height: 70%;
+
+  border-radius: 1em;
+}
+
+.footer .container .second .subthree .innr-2 .list li {
+  margin-bottom: 2%;
+  text-align: left;
+  font-size: 2vh;
+  list-style-type: none;
+}
+
+.footer .container .third .subone {
+  flex: 1;
+
+  border-radius: 0 2vw 2vw 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  margin: 0;
+  padding: 0;
+  background-color: aliceblue;
+}
+
+.footer .container .third .subtwo {
+  flex: 1;
+
+  border-radius: 2vw 0 0 2vw;
+  margin: 0;
+  padding: 0;
+  background-color: aliceblue;
+}
+
+
+
+.footer .container .third .subtwo {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+.footer .container .third .subtwo .innr-1 {
+
+  height: 100%;
+}
+
+
+
+.footer .container .third .subtwo .innr-1 ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  height: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+
+.horizontal-list li {
+  display: inline;
+}
+
+.horizontal-list li a {
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.horizontal-list li a:hover {
+  color: #0056b3;
+}

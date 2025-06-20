@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+    <link rel="stylesheet" href="./header.css" />
+    <link rel="stylesheet" href="./footer.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Nunito Sans', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .main-content {
+            padding-top: 100px;
+            /* Adds vertical space below fixed navbar */
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            width: 100%;
+        }
+
+        /* Prevent navbar overlap */
+        .container.main-content {
+            margin-top: 120px;
+            /* enough to clear the fixed navbar */
+        }
+
+        /* Force footer to be full width and eliminate dead space */
+        .footer {
+            padding: 2em 0;
+            background-color: #f9f9f9;
+            width: 100%;
+        }
+
+        .footer>.container {
+            width: 100% !important;
+            /* override max-width in .container */
+            max-width: 100% !important;
+            margin: 0 !important;
+            padding: 0 2vw;
+        }
+
+        .product-image {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .product-image img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .product-description {
+            flex: 2;
+        }
+
+        .product-description h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .product-description p {
+            margin-bottom: 12px;
+            line-height: 1.6;
+        }
+
+        .features {
+            margin-top: 20px;
+        }
+
+        .features h2 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .features ul {
+            padding-left: 20px;
+        }
+
+        .related-products {
+            margin-top: 60px;
+        }
+
+        .related-products h2 {
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+
+        .related-list {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .related-item {
+            flex: 1;
+            min-width: 200px;
+            background: #fafafa;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+
+        .related-item img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        .related-item p {
+            margin-top: 10px;
+            font-weight: 600;
+        }
+
+        /* Force footer to be full width and eliminate dead space */
+        .footer {
+            padding: 2em 0;
+            background-color: #f9f9f9;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExOWNzbTNnYW42ZmRyZmlxMDhyeHFlYXQ1eDUyb3BuMzg0OG0yeDZrOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7TKUfKeHBXXxAZtS/giphy.webp"
+                alt="Computer man">
+            <a href=></a>
+        </div>
+        <div class="right-group">
+            <div class="topnav" id="myTopnav">
+                <a href="./index.html" class="active">HOME</a>
+                <a href="./new_product.html">PRODUCTS</a>
+                <a href="./product_page.html">SAMPLE PRODUCT</a>
+                <a href="#products">ABOUT US</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+            <div class="quote">
+                <a href="#quote">CONTACT US</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="container">
+            <div class="product-section">
+                <div class="product-image">
+                    <img src="https://plus.unsplash.com/premium_photo-1661844549368-fae582e4e13f?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Autotrol Valve">
+                </div>
+                <div class="product-description">
+                    <h1>Autotrol Valve Series & Technologies</h1>
+                    <p><strong>Autotrol 360 Valve:</strong> A manual filter valve designed for straightforward, hands-on
+                        control in filtration systems.</p>
+                    <p><strong>Autotrol 361 Valve:</strong> A semi-automatic filter valve that combines manual operation
+                        with automated features for enhanced efficiency.</p>
+                    <p><strong>Autotrol 367 Valve:</strong> A softener control valve optimised for precise management of
+                        water softening processes, delivering exceptional performance.</p>
+                    <p><strong>Duraflow Flapper Technology:</strong> Engineered for reliability, the Duraflow flapper
+                        delivers a frictionless seal, reducing wear and extending service life while enhancing overall
+                        system performance.</p>
+                    <p><strong>Superior Valve Construction:</strong> Built with a fibre-reinforced polymer body, these
+                        valves offer exceptional strength, durability, and resistance to corrosion and UV exposure,
+                        making them perfect for challenging environments.</p>
+
+                    <div class="features">
+                        <h2>Features & Benefits</h2>
+                        <ul>
+                            <li>Manual & Semi-Automatic Operation: No programming required, offering straightforward
+                                control for efficient filtration.</li>
+                            <li>High Flow Rates: Continuous service flow rate of 21 GPM, with a backwash flow rate of 19
+                                GPM (full flow).</li>
+                            <li>User-Initiated Regeneration: Easily activate regeneration with a simple knob.</li>
+                            <li>Single Tank System: Designed for single-tank use, delivering consistent performance.
+                            </li>
+                            <li>Flow Options: Available in full flow or low flow versions to suit various requirements.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="related-products">
+                <h2>Related Products</h2>
+                <div class="related-list">
+                    <div class="related-item">
+                        <img src="https://plus.unsplash.com/premium_photo-1682144538950-d2595484bc07?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Related Product 1">
+                        <p>Autotrol 255 Valve</p>
+                    </div>
+                    <div class="related-item">
+                        <img src="https://plus.unsplash.com/premium_photo-1661904482365-67d592410354?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Related Product 2">
+                        <p>Duraflow Seal Kit</p>
+                    </div>
+                    <div class="related-item">
+                        <img src="https://plus.unsplash.com/premium_photo-1661962763926-0c978875ec3f?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Related Product 3">
+                        <p>Flow Control Regulator</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="first">
+                <div class="subone">
+                </div>
+            </div>
+            <div class="second">
+                <div class="subone">
+                    <div class="innr-1"></div>
+                    <div class="innr-2">
+                        <p>
+                            Water Research Australia acknowledges the Traditional Owners of Country throughout
+                            Australia. We pay our respects to Elders past and present.
+                        </p>
+                    </div>
+                </div>
+                <div class="subtwo">
+                    <ul class="list">
+                        <li>Research</li>
+                        <li>Proposals</li>
+                        <li>Leadership</li>
+                        <li>News</li>
+                        <li>Events</li>
+                        <li>Health Stream</li>
+                    </ul>
+                </div>
+                <div class="subthree">
+                    <div class="innr-1">
+                        <!-- Social Media Icons -->
+                        <a href="https://facebook.com" target="_blank">
+                            <i class="fa-brands fa-square-facebook fa-2xl" style="color: #001e57;"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank">
+                            <i class="fa-brands fa-square-x-twitter fa-2xl" style="color: #001e57;"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank">
+                            <i class="fa-brands fa-linkedin fa-2xl" style="color: #001e57;"></i>
+                        </a>
+                        <a href="https://youtube.com" target="_blank">
+                            <i class="fa-brands fa-youtube fa-2xl" style="color: #001e57;"></i>
+                        </a>
+                    </div>
+                    <div class="innr-2">
+                        <ul class="list">
+                            <li>info@waterra.com.au</li>
+                            <li>250 Victoria Square, Adelaide SA 5000</li>
+                            <li>GPO Box 1751, Adelaide SA 5001</li>
+                            <li>Australia</li>
+                            <li>08 7424 2445</li>
+                            <li>ABN: 32 127 974 261</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="third">
+                <div class="subone">
+                    <div class="innr-1">
+                        <p>© Copyright 2024 Water Research Australia Limited</p>
+                    </div>
+                </div>
+                <div class="subtwo">
+                    <div class="innr-1">
+                        <ul class="horizontal-list">
+                            <li><a href="#privacy-policy">Privacy Policy</a></li>
+                            <li><a href="#disclaimer">Disclaimer</a></li>
+                            <li><a href="#terms-conditions">Terms and Conditions</a></li>
+                            <li><a href="#contact-us">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
